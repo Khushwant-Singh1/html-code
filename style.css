@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  /* color: white; */
+}
+
+body {
+  background-color: black;
+}
+
+.navbar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Position navbar fixed */
+  top: 0; /* Stick it to the top */
+  width: 100%; /* Make it full width */
+  background-color: black;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.navbar img {
+  display: inline;
+  vertical-align: middle;
+  max-width: 18%;
+  height: auto;
+}
+
+.navbar ul {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar ul li {
+  font-size: larger;
+  padding: 3px;
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: #98abee;
+  border-radius: 10px;
+}
+.main {
+  margin-top: 10%;
+  padding: 50px;
+}
+.main img {
+  width: 15vw;
+  height: auto;
+}
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper {
+  display: inline-flex;
+}
+
+.wrapper .static-text {
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.wrapper .dynamic-text {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 80px;
+  overflow: hidden;
+}
+
+.dynamic-text li {
+  list-style: none;
+  color: #98abee;
+  font-size: 60px;
+  font-weight: 400;
+  position: relative;
+  top: 0;
+  animation: slide 10s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px; /* Adjusted value for smoother animation */
+  }
+}
+
+.dynamic-text li span {
+  position: relative;
+  background: #000;
+}
+
+.dynamic-text li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  /* border-right: 2px solid #c300ff; */
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%,
+  70% {
+    left: calc(100% + 70px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.dynamic-text p{
+  color: white;
+}
+/* .wrapper{
+  display:;
+  justify-content: wrap;
+} */
+.wrapper{
+  border: 2px solid white;
+  /* flex-wrap: ; */
+}
+.name{
+  display: flex;
+  /* justify-content: left; */
+  justify-content: center;
+  color: white;
+  word-break: break-all;
+}
+.heading{
+  display: flex;
+  color: white;
+  border: 2px solid wheat;
+}
