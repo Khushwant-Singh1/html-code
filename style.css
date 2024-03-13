@@ -1,8 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
-  /* color: white; */
 }
 
 body {
@@ -14,11 +12,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed; /* Position navbar fixed */
-  top: 0; /* Stick it to the top */
-  width: 100%; /* Make it full width */
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: black;
-  z-index: 1000; /* Ensure it's above other content */
+  z-index: 1000;
 }
 
 .navbar img {
@@ -50,19 +48,23 @@ body {
   background-color: #98abee;
   border-radius: 10px;
 }
+
 .main {
   margin-top: 10%;
   padding: 50px;
 }
+
 .main img {
   border-radius: 10px;
   width: 15vw;
   height: auto;
 }
+
 .hero {
   display: flex;
   justify-content: space-evenly;
 }
+
 .wrapper {
   display: inline-flex;
 }
@@ -92,7 +94,7 @@ body {
 
 @keyframes slide {
   100% {
-    top: -360px; /* Adjusted value for smoother animation */
+    top: -360px;
   }
 }
 
@@ -109,13 +111,11 @@ body {
   height: 100%;
   width: 100%;
   background: #000;
-  /* border-right: 2px solid #c300ff; */
   animation: typing 3s steps(10) infinite;
 }
 
 @keyframes typing {
-  40%,
-  70% {
+  40%, 70% {
     left: calc(100% + 80px);
   }
   100% {
@@ -137,173 +137,139 @@ body {
 .wrapper {
   height: 80px;
 }
-.name h1{
+
+.name h1 {
   padding: 5px;
 }
+
 .name:hover {
   text-decoration: underline;
 }
+
 .name-heading:hover {
   background-color: #98abee;
   border-radius: 8px;
 }
+
 .about {
   margin: 10px;
 }
+
 .about-heading {
   color: white;
   text-decoration: underline;
 }
+
 .about-content {
   padding: 10px;
   color: white;
 }
+
 .edu {
   text-decoration: underline;
   color: white;
   display: flex;
   justify-content: center;
 }
+
 .education {
   display: grid;
   grid-template-areas: "side1 side2 side3";
 }
-.galgotias {
-  padding: 10px;
-  grid-area: side1;
-  color: white;
-  border-radius: 15px;
-  background-color: #98abee;
-  margin: 15px;
-  transition: transform 0.3s;
-}
-.galgotias:hover {
-  transform: scale(1.2);
-  box-shadow: 5px 15px 5px #c0caf0;
-}
-.galgotias p {
-  padding: 10px;
-}
-.familiar h1 {
-  color: white;
-  margin: 10px;
-}
-.pro h2 {
-  color: white;
-}
 
-.dma-12 {
-  padding: 10px;
-  grid-area: side2;
-  color: white;
-  border-radius: 15px;
-  background-color: #98abee;
-  margin: 15px;
-  transition: transform 0.3s;
-}
-.dma-12 p {
-  padding: 10px;
-}
-.dma-12:hover {
-  transform: scale(1.2);
-  box-shadow: 5px 15px 5px #c0caf0;
-}
+.galgotias,
+.dma-12,
 .dma-10 {
   padding: 10px;
-  grid-area: side3;
   color: white;
   border-radius: 15px;
   background-color: #98abee;
   margin: 15px;
   transition: transform 0.3s;
 }
+
+.galgotias:hover,
+.dma-12:hover,
 .dma-10:hover {
   transform: scale(1.2);
   box-shadow: 5px 15px 5px #c0caf0;
 }
+
+.galgotias p,
+.dma-12 p,
 .dma-10 p {
   padding: 10px;
 }
+
 .skills {
   display: flex;
   align-items: flex-start;
   color: white;
 }
+
 .icons {
   position: relative;
-  margin: 5px, 5px;
+  margin: 5px 5px;
 }
+
 .icons img {
   margin: 10px;
-  width: auto; /* Adjusted width */
+  width: auto;
   height: 80px;
   transition: transform 0.3s;
 }
+
 .icons:hover img {
   transform: scale(1.2);
 }
+
 .icon-text {
-  /* width: 3vw; */
   border-radius: 8px;
   padding: 5px;
   background-color: #98abee;
   position: absolute;
-  bottom: -20px;
   bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s, bottom 0.3s;
 }
+
 .icons:hover .icon-text {
   opacity: 1;
   bottom: -20px;
 }
-.tab-contents h2 {
+
+.tab-contents h2,
+.front h2 {
   color: white;
 }
+
 .tab-contents {
   display: flex;
   align-items: flex-start;
   margin: 10px;
 }
-.front h2 {
-  color: white;
-}
+
 .tab-contents .icon-text {
   width: max-content;
 }
+
 .con {
   margin-top: 30px;
   color: white;
   text-decoration: underline;
 }
+
 form {
   border-radius: 5px;
   padding: 10px;
   background-color: #adb8df;
   margin: 35px;
 }
-.mail {
-  background-color: #98abee;
-  font-size: larger;
-  color: white;
-  margin: 10px;
-  padding: 10px;
-}
-.mail input {
-  display: block;
-}
-.phone {
-  background-color: #98abee;
-  font-size: larger;
-  color: white;
-  margin: 10px;
-  padding: 10px;
-}
-.phone input {
-  display: block;
-}
+
+.mail,
+.phone,
 .message {
   background-color: #98abee;
   font-size: larger;
@@ -311,9 +277,13 @@ form {
   margin: 10px;
   padding: 10px;
 }
+
+.mail input,
+.phone input,
 .message textarea {
   display: block;
 }
+
 #submit {
   margin: 10px;
   padding: 10px;
@@ -321,6 +291,7 @@ form {
   border-radius: 10px;
   font-size: larger;
 }
+
 #submit:hover {
   cursor: pointer;
 }
