@@ -46,6 +46,7 @@ body {
 }
 
 .navbar ul li a:hover {
+  cursor: pointer;
   background-color: #98abee;
   border-radius: 10px;
 }
@@ -54,6 +55,7 @@ body {
   padding: 50px;
 }
 .main img {
+  border-radius: 10px;
   width: 15vw;
   height: auto;
 }
@@ -102,6 +104,7 @@ body {
 .dynamic-text li span::after {
   content: "";
   position: absolute;
+  top: 1px;
   left: 0;
   height: 100%;
   width: 100%;
@@ -113,33 +116,211 @@ body {
 @keyframes typing {
   40%,
   70% {
-    left: calc(100% + 70px);
+    left: calc(100% + 80px);
   }
   100% {
     left: 0;
   }
 }
 
-.dynamic-text p{
+.dynamic-text p {
   color: white;
 }
-/* .wrapper{
-  display:;
-  justify-content: wrap;
-} */
-.wrapper{
-  border: 2px solid white;
-  /* flex-wrap: ; */
-}
-.name{
+
+.name {
   display: flex;
-  /* justify-content: left; */
+  justify-content: flex-end;
+  color: white;
+  margin-right: 150px;
+}
+
+.wrapper {
+  height: 80px;
+}
+.name h1{
+  padding: 5px;
+}
+.name:hover {
+  text-decoration: underline;
+}
+.name-heading:hover {
+  background-color: #98abee;
+  border-radius: 8px;
+}
+.about {
+  margin: 10px;
+}
+.about-heading {
+  color: white;
+  text-decoration: underline;
+}
+.about-content {
+  padding: 10px;
+  color: white;
+}
+.edu {
+  text-decoration: underline;
+  color: white;
+  display: flex;
   justify-content: center;
-  color: white;
-  word-break: break-all;
 }
-.heading{
-  display: flex;
+.education {
+  display: grid;
+  grid-template-areas: "side1 side2 side3";
+}
+.galgotias {
+  padding: 10px;
+  grid-area: side1;
   color: white;
-  border: 2px solid wheat;
+  border-radius: 15px;
+  background-color: #98abee;
+  margin: 15px;
+  transition: transform 0.3s;
+}
+.galgotias:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 15px 5px #c0caf0;
+}
+.galgotias p {
+  padding: 10px;
+}
+.familiar h1 {
+  color: white;
+  margin: 10px;
+}
+.pro h2 {
+  color: white;
+}
+
+.dma-12 {
+  padding: 10px;
+  grid-area: side2;
+  color: white;
+  border-radius: 15px;
+  background-color: #98abee;
+  margin: 15px;
+  transition: transform 0.3s;
+}
+.dma-12 p {
+  padding: 10px;
+}
+.dma-12:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 15px 5px #c0caf0;
+}
+.dma-10 {
+  padding: 10px;
+  grid-area: side3;
+  color: white;
+  border-radius: 15px;
+  background-color: #98abee;
+  margin: 15px;
+  transition: transform 0.3s;
+}
+.dma-10:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 15px 5px #c0caf0;
+}
+.dma-10 p {
+  padding: 10px;
+}
+.skills {
+  display: flex;
+  align-items: flex-start;
+  color: white;
+}
+.icons {
+  position: relative;
+  margin: 5px, 5px;
+}
+.icons img {
+  margin: 10px;
+  width: auto; /* Adjusted width */
+  height: 80px;
+  transition: transform 0.3s;
+}
+.icons:hover img {
+  transform: scale(1.2);
+}
+.icon-text {
+  /* width: 3vw; */
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #98abee;
+  position: absolute;
+  bottom: -20px;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, bottom 0.3s;
+}
+.icons:hover .icon-text {
+  opacity: 1;
+  bottom: -20px;
+}
+.tab-contents h2 {
+  color: white;
+}
+.tab-contents {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px;
+}
+.front h2 {
+  color: white;
+}
+.tab-contents .icon-text {
+  width: max-content;
+}
+.con {
+  margin-top: 30px;
+  color: white;
+  text-decoration: underline;
+}
+form {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #adb8df;
+  margin: 35px;
+}
+.mail {
+  background-color: #98abee;
+  font-size: larger;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.mail input {
+  display: block;
+}
+.phone {
+  background-color: #98abee;
+  font-size: larger;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.phone input {
+  display: block;
+}
+.message {
+  background-color: #98abee;
+  font-size: larger;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.message textarea {
+  display: block;
+}
+#submit {
+  margin: 10px;
+  padding: 10px;
+  background-color: #98abee;
+  border-radius: 10px;
+  font-size: larger;
+}
+#submit:hover {
+  cursor: pointer;
 }
